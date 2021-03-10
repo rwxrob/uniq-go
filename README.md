@@ -18,6 +18,7 @@ When a simple random identifier is all that is needed `Base32()` provides a bett
 This package includes the following convenience commands as well for use when integrating with shell scripts:
 
 * `uuid`
-* `usec`
 * `uid32`
+* `isosec`
+* `epoch [SECONDS]`
 * `randhex [COUNT]`
