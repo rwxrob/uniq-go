@@ -5,6 +5,7 @@ import (
 	"os"
 	"strconv"
 
+	"github.com/rwxrob/cmdtab"
 	"github.com/rwxrob/uniq-go"
 )
 
@@ -17,5 +18,6 @@ func main() {
 			os.Exit(1)
 		}
 	}
-	fmt.Printf("%x", uniq.Bytes(n))
+	t := fmt.Sprintf("%x", uniq.Bytes(n))
+	cmdtab.SmartPrintln(t)
 }

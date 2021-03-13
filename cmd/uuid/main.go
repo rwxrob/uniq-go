@@ -1,11 +1,10 @@
 package main
 
 import (
-	"fmt"
-
+	"github.com/rwxrob/cmdtab"
 	"github.com/rwxrob/uniq-go"
 )
 
 func main() {
-	fmt.Print(uniq.UUID())
+	cmdtab.SmartPrintln(uniq.UUID())
 }
