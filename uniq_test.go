@@ -3,7 +3,7 @@ package uniq_test
 import (
 	"fmt"
 
-	"github.com/rwxrob/uniq"
+	"github.com/rwxrob/uniq-go"
 )
 
 func ExampleBytes() {
