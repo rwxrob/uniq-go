@@ -99,5 +99,5 @@ func Second() string {
 // that has the added advantage of being chronologically sortable and
 // more readable than the epoch. (Also see Second())
 func IsoSecond() string {
-	return fmt.Sprintf("%v", time.Now().Format("20060102150304"))
+	return fmt.Sprintf("%v", time.Now().Format("20060102150405"))
 }
