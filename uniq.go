@@ -94,10 +94,10 @@ func Second() string {
 	return fmt.Sprintf("%v", time.Now().Unix())
 }
 
-// IsoSecond returns the current in ISO8601 (RFC3339) without any
-// puctuation or the T.  This is frequently a very good unique suffix
-// that has the added advantage of being chronologically sortable and
-// more readable than the epoch. (Also see Second())
+// IsoSecond returns the GMT current time in ISO8601 (RFC3339) without
+// any punctuation or the T.  This is frequently a very good unique
+// suffix that has the added advantage of being chronologically sortable
+// and more readable than the epoch. (Also see Second())
 func IsoSecond() string {
-	return fmt.Sprintf("%v", time.Now().Format("20060102150405"))
+	return fmt.Sprintf("%v", time.Now().In(time.UTC).Format("20060102150405"))
 }

@@ -2,6 +2,7 @@ package uniq_test
 
 import (
 	"fmt"
+	"log"
 
 	"github.com/rwxrob/uniq-go"
 )
@@ -60,6 +61,7 @@ func ExampleSecond() {
 func ExampleIsoSecond() {
 
 	sec := uniq.IsoSecond()
+	log.Print(sec)
 	fmt.Println(len(sec))
 
 	// Output:
